@@ -1,7 +1,18 @@
 
 /* cool styling */
 body {
-    background-color: rgba(168, 212, 255, 0.2);
+
+    height:fit-content;
+    padding: 25px;
+    border: 5px darkblue;
+    margin: 5;
+    background-image: url("/images/background.webp");
     font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    
 }
