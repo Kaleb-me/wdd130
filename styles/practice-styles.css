@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    background-color: linear-gradient(bottom, white, aqua);
+
+}
+
+
+img {
+    width: 90%;
+    max-width: 800px;
+    border: #2e4fa3 4px solid ;
+}
+
+nav {
+    padding: 5px;
+    background-color: #2e4fa3;
+}
+
+h1 {
+    text-align: center;
+    color: #2e4fa3;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+
+}
+
+footer {
+    background-color: #2e4fa3;
+    color: white;
+    padding: 5px;
+}
+
+footer p {
+    color: pink;
+}
