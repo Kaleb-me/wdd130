@@ -6,25 +6,25 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396E94   ;
-  --secondary-color: #E7C24F ;
-  --accent1-color: #A42212;
-  --accent2-color: white;
+  --primary-color: #DA2C38   ;
+  --secondary-color: #05668D ;
+  --accent1-color: #ECE8EF;
+  --accent2-color: #FFE156;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Garamond";
+  --paragraph-font: "Courier New";
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #DA2C38;  /* headlines on a white background */ 
+  --headline-color-on-color: #ECE8EF; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #05668D; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #ECE8EF; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #05668D  ;
+  --nav-link-color: #ECE8EF;
+  --nav-background-color: #05668D;
+  --nav-hover-link-color: #ECE8EF;
+  --nav-hover-background-color: #DA2C38;
 }
 
 
