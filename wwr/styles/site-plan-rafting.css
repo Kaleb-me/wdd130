@@ -5,7 +5,7 @@ Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #DA2C38   ;
+  --primary-color: #a5222b   ; /* a5222b# */
   --secondary-color: #05668D ;
   --accent1-color: #ECE8EF;
   --accent2-color: #FFE156;
@@ -18,7 +18,7 @@ Fonts are separated by a & */
   --headline-color-on-white: #DA2C38;  /* headlines on a white background */ 
   --headline-color-on-color: #ECE8EF; /* headlines on a colored background */ 
   --paragraph-color-on-white: #05668D; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #ECE8EF; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #FFE156; /* paragraph text on a colored background */ 
   --paragraph-background-color: #05668D  ;
   --nav-link-color: #ECE8EF;
   --nav-background-color: #05668D;
