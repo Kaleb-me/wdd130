@@ -1,9 +1,14 @@
 :root {
-  --primary-color: #a5222b   ; /* a5222b# */
-  --secondary-color: #05668D ;
-  --accent1-color: #ECE8EF;
-  --accent2-color: #FFE156;
-  --paragraph-background-color: #ECE8EF;
+  --hover-back-color: #a5222b   ; /* a5222b# */
+  --box-background-color: #05668D ;
+  --white-color: #ECE8EF;
+  --text-background-color: #FFE156;
+  --hover-text-color: #ECE8EF;
+
+}
+
+body {
+background-color: var(--white-color);
 }
 
 #content {
@@ -11,33 +16,41 @@
     margin: 0 auto;
 }
 
+header {
+background-color: var(--box-background-color);
+}
+
 nav a {
     text-align: center;
-    color: var(--paragraph-background-color);
+    color: var(--text-background-color);
+    text-decoration: none;
 }
 
 nav a:hover {
-background-color: var(--primary-color);
+background-color: var(--hover-back-color);
+color: var(--hover-text-color);
 }
-
+#hero-img {
+    width: 100%;
+}
 #hero-msg h1 {
     text-align: center;
-    color: var(--accent1-color);
+    color: var(--text-background-color);
 }
 
 #hero-msg h2 {
     text-align: center;
-    color: var(--accent1-color);
+    color: var(--text-background-color);
 
+}
+
+.home-title h1 {
+    color: var(--hover-back-color);
 }
 
 .button-box {
     text-align: center;
-    background-color: var(--primary-color);
-}
-
-.home-title h4 {
-    color: var(--primary-color);
+    background-color: var(--box-background-color);
 }
 
 main section {
@@ -46,49 +59,53 @@ main section {
 
 #background {
     height: 725px;
-    background-color: var(--paragraph-background-color);
-
+    background-color: var(--box-background-color);
 }
 
-body {
-background-color: var(--paragraph-background-color);
+.community, .join {
+background-color: var(--box-background-color);
+color: var(--text-background-color);
+text-decoration: none;
 }
 
-header {
-background-color: var(--secondary-color);
-}
-
-.book, .join {
-background-color: var(--secondary-color);
-color: var(--accent1-color);
-}
-
-.book:hover, .join:hover {
-background-color: var(--primary-color);
-color: var(--accent1-color)
+.community:hover, .join:hover {
+background-color: var(--hover-back-color);
+color: var(--hover-text-color)
 }
 
 .msg {
-background-color: var(--paragraph-background-color);
+background-color: var(--hover-text-color);
 }
 
 .msg h2 {
-    color: var(--secondary-color)
+    color: var(--box-background-color)
 }
 
 .msg p {
-    color: var(--secondary-color)
+    color: var(--box-background-color)
 
 }
 
 footer {
-background-color: var(--paragraph-background-color);
+background-color: var(--box-background-color);
+color: var(--text-background-color);
 }
 
 footer a {
-    color: var(--secondary-color)
+    color: var(--text-background-color);
+    text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--primary-color);
+    color: var(--white-color);
+    background-color: var(--hover-back-color);
 }
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+
