@@ -1,111 +1,189 @@
 :root {
-  --hover-back-color: #a5222b   ; /* a5222b# */
-  --box-background-color: #05668D ;
-  --white-color: #ECE8EF;
-  --text-background-color: #FFE156;
-  --hover-text-color: #ECE8EF;
+  --red: #a5222b   ;
+  --blue: #05668D ;
+  --yellow: #FFE156;
+  --white: #ECE8EF;
 
 }
 
 body {
-background-color: var(--white-color);
+background-color: var(--white);
+margin: 0;
 }
 
 #content {
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 header {
-background-color: var(--box-background-color);
+background-color: rgba(5,102,141,0.6);
+display: grid;
+grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+    
 }
 
 nav a {
     text-align: center;
-    color: var(--text-background-color);
+    color: var(--yellow);
     text-decoration: none;
 }
 
 nav a:hover {
-background-color: var(--hover-back-color);
-color: var(--hover-text-color);
+background-color: var(--red);
+color: var(--yellow);
 }
+
+#hero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/6;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
 #hero-img {
     width: 100%;
+
 }
-#hero-msg h1 {
+
+#hero-msg {
     text-align: center;
-    color: var(--text-background-color);
+    color: var(--yellow);
+    grid-area: 1 / 2 / 2 / 5;
+    margin-top: 100px;
+}
+
+#hero-msg h1 {
+    font-size: 1.75em;
+    margin: 3px 0 0 0;
 }
 
 #hero-msg h2 {
-    text-align: center;
-    color: var(--text-background-color);
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 
 }
 
+.card-img, .mountains {
+    width: 100%;
+}
+
+.mountains {
+    grid-area: 5 / 2 / 8 / 7;
+}
+
+.rivers-card {
+    grid-area: 2 / 2 / 3 / 4;
+    margin-bottom: 20px;
+}
+
+.camping-card {
+    grid-area: 2 / 5 / 3 / 7;
+}
+
+.rapids-card {
+    grid-area: 2 / 8 / 3 / 10;
+}
+
 .home-title h1 {
-    color: var(--hover-back-color);
+    color: var(--red);
 }
 
 .button-box {
     text-align: center;
-    background-color: var(--box-background-color);
+    background-color: var(--blue);
+    text-decoration: none;
+    color: var(--yellow)
 }
 
 main section {
     text-align: center;
 }
 
+main h2 {
+    margin: 0 auto;
+}
+
 #background {
-    height: 725px;
-    background-color: var(--box-background-color);
+    height: 500px;
+    background-color: var(--blue);
+    grid-area: 4 / 1 / 9 / 11;
 }
 
 .community, .join {
-background-color: var(--box-background-color);
-color: var(--text-background-color);
+background-color: var(--blue);
+color: var(--white);
 text-decoration: none;
 }
 
-.community:hover, .join:hover {
-background-color: var(--hover-back-color);
-color: var(--hover-text-color)
+.join:hover {
+background-color: var(--red);
+color: var(--white)
 }
 
-.msg {
-background-color: var(--hover-text-color);
+.community {
+background-color: var(--white);
+grid-area: 6 / 6 / 7 / 10;
 }
 
-.msg h2 {
-    color: var(--box-background-color)
+.community h2 {
+    color: var(--blue)
 }
 
-.msg p {
-    color: var(--box-background-color)
+.community p {
+    color: var(--blue)
 
 }
 
 footer {
-background-color: var(--box-background-color);
-color: var(--text-background-color);
+background-color: var(--blue);
+color: var(--yellow);
+padding: 25px 50px;
+margin-top: 200px;
+display: flex;
+justify-content: space-around;
+align-items: center;
 }
 
 footer a {
-    color: var(--text-background-color);
+    color: var(--yellow);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--white-color);
-    background-color: var(--hover-back-color);
+    color: var(--white);
+    background-color: var(--red);
 }
 
 .logo {
     width: 80px;
+
 }
 
 .icon {
-    width: 80px;
+    width: 50px;
+    margin: 0;
 }
 
