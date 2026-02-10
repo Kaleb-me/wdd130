@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #006eb6, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  min-height: 400px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 2px 2px 4px #001f3f ;
+
+}
+
+td, th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #006eb6;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #a2daff;
+}
+
+label {
+  color: #001f3f;
+}
+
+#gridbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+#quotebox {
+  padding: 15px;
+  font-size: 150%;
+  grid-column: 1/2;
+  color: #006eb6;
+  text-shadow: 1px 1px #b2b2b2;
+}
+
+#quotebox h2 {
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+}
+
+#devoform {
+  margin-top: 20px;
+  padding: 0 15px 15px 15px;
+  border: 5px solid #006eb6;
+  background-color: #a2daff;
+  box-shadow: 4px 4px 4px #001f3f ;
+  color: white;
+  text-shadow: 1px 1px rgb(112, 148, 209) ;
+  text-align: left;
+  grid-column: 2/3;
+}
+
+#devoform h2 {
+  text-align: center;
+  color: #006eb6;
+}
+
+label {
+  color: #006eb6;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width:250px;
+}
+
+#quotebox h2:hover {
+  opacity: .6;
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+  color: #006eb6;
+
+}
