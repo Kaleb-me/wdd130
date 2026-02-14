@@ -48,7 +48,7 @@ section {
     justify-content: center;
     align-items: center;
     --c: red;
-    width: 20em;
+    width: 80%;
     aspect-ratio: 1;
     background:
     /* 1 */ radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
