@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<script>
-    const track = document.querySelector('.carousel-track');
-    const slides = Array.from(document.querySelectorAll('.slide'));
-    const nextbtn = document.querySelector('#next')
-    const prevbtn = document.querySelector('#prev')
-</script>
-
 <body>
     <header>
         <nav>
@@ -38,9 +31,10 @@
         <h2><em>"We are men of action. Lies do not become us"</em> -Wesley, The Princess Bride</h2>
         <img id="portrait" src="images/portrait.jpg" alt="portrait of Kaleb">
     </section>
+
     <div class="carousel">
 
-        <button id="prev">arrow</button>
+        <button class="prev">arrow</button>
         <div class="carousel-viewport">
             <div class="carousel-track">
                     <a class="slide" href="ice/prophet_cards/oaks.html"><img src="images/prophet.png" alt=""></a>
@@ -49,14 +43,56 @@
                     <a class="slide" href="ice/valentines/index.html"><img src="images/holiday.png" alt=""></a>
             </div>
         </div>
-        <button id="next">arrow</button>
+        <button class="next">arrow</button>
 
     </div>
+
     <section class="projectbox">
         <video src="images/kettle.MOV"></video>
         <img src="images/bomshell.png" alt="a terminal window with code">
 
     </section>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(document.querySelectorAll('.slide'));
+        const nextbtn = document.querySelector('.next')
+        const prevbtn = document.querySelector('.prev')
+        let currentIndex = 0;
+
+        function moveToSlide(index) {
+            const slideWidth = slides[0].clientWidth;
+            track.style.transform = `translateX(-${slideWidth * index}px)`;
+        }
+
+        function nextSlide() {
+            if (currentIndex < slides.length -1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+
+            moveToSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = slides.length -1;
+            }
+
+            moveToSlide(currentIndex);
+        }
+
+        nextbtn.addEventListener('click',(nextSlide));
+
+        prevbtn.addEventListener('click',(prevSlide));
+
+        let autoSlide = setInterval(nextSlide,3000)
+    
+    </script>
+
 </body>
 
 
