@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
+<script>
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const nextbtn = document.querySelector('#next')
+    const prevbtn = document.querySelector('#prev')
+</script>
+
 <body>
     <header>
         <nav>
@@ -42,7 +49,7 @@
                     <a class="slide" href="ice/valentines/index.html"><img src="images/holiday.png" alt=""></a>
             </div>
         </div>
-        <button>arrow</button>
+        <button id="next">arrow</button>
 
     </div>
     <section class="projectbox">
