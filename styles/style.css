@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Gabarito';
+    color: white;
+    text-shadow: 2px 2px 2px #B74F6F;
+}
+
+p {
+    font-family: 'Noto Sans Mono';
+    color: white;
+    text-shadow: 1px 1px #B74F6F;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,9 +24,10 @@ a {
 }
 
 body {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #999999;
+max-width: 1000px;
+margin: 0 auto;
+background: #F0F6F9;
+background: linear-gradient(90deg, rgba(240, 246, 249, 1) 0%, rgba(153, 193, 214, 1) 50%, rgba(144, 194, 231, 1) 100%);
 
 }
 
@@ -26,11 +41,15 @@ nav {
     width: 100px;
 }
 
+nav {
+    background-color: rgba(144,194,231,0.3);
+    z-index: 1;
+}
 nav h1 {
     grid-column: 2/3;
     font-size: 300%;
-    color: white;
 }
+
 
 ul {
     grid-column: 3/4;
@@ -42,53 +61,67 @@ ul {
 
 .herobox {
     display: grid;
-    grid-template-columns: 6fr 3fr 1fr;
-    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 1fr;
     height: fit-content;
 }
 
 #heroimg {
     width: 100%;
     z-index: 0;
-    grid-area: 1/1/4/4;
+    grid-area: 1/1/5/4;
     object-fit: cover;
 }
 
 #aboutbox {
-    grid-area: 2/1/3/2;
+    max-height: 450px;
+    grid-area: 2/2/3/3;
     z-index: 1;
-    margin: 5% 2% 2% 2%;
+    background-color: rgba(121, 180, 226, 0.5);
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 4fr;
 
+}
+
+#aboutbox h2 {
+    grid-area: 1/1/2/2;
 }
 
 #aboutbox p {
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    font-size: 150%;
+    /* color: #1D5986;
+    text-shadow: 1px 1px 1px white; */
+    font-size: 130%;
+    grid-area:2/1/3/2;
+    padding-right: 15px;
 }
 
-#portrait {
+#aboutbox img {
     width: 100%;
-    grid-area: 2/2/3/3;
+    grid-area: 1/2/3/3;
     z-index: 1;
     border: solid 2px white;
     box-shadow: 1px 1px 2px #000;
+    align-self: center;
 
 }
 
 .herobox h2 {
-    grid-area: 3/1/4/2;
+    grid-area: 3/2/4/3;
     z-index: 1;
-    font-size: 300%;
+    font-size: 3em;
     color: white;
-    text-shadow: 2px 2px 2px black;
-    margin: 3%;
-    align-self: center;
+    text-shadow: 2px 2px 2px #B74F6F;
+    margin-bottom: 3%;
+    align-self:center;
 }
 
+/* ------------------Carousel--------------------- */
 .carousel {
     position: relative;
     width: 100%;
+    max-width: 1000px;
     margin: 40px auto;
     overflow: hidden;
 }
@@ -111,5 +144,140 @@ ul {
 
 .carousel img {
     width: 100%;
-    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.next {
+    right: 1%;
+}
+
+.prev {
+    transform: rotate(180deg);
+    left: 1%;
+}
+
+/* --------------------------------------------- */
+
+.projectbox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr 6fr 2fr 5fr 1fr;
+    background: #368FD3;
+    background: linear-gradient(0deg, rgba(54, 143, 211, 1) 0%, rgba(121, 180, 226, 1) 100%);
+    /* border: solid white 5px; */
+    box-shadow: 2px 2px 10px black;
+}
+
+.projectbox h2 {
+    grid-area: 1/1/2/3;
+}
+
+video {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+
+#kettlebox {
+    grid-area: 1/2/3/3;
+    padding: 5%;
+    justify-content: center;
+}
+
+#kettlebox h3 {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 2px #B74F6F;
+    justify-self: center;
+}
+
+#kettlebox p {
+    margin: 1em 0 2em 0;
+    text-align: center;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 2px 2px 4px #001f3f ;
+  font-family: Gabarito;
+
+}
+
+td, th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #006eb6;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #a2daff;
+}
+
+label {
+  color: #001f3f;
+}
+
+.bomtitle {
+    grid-area: 3/2/4/3;
+    align-self: center;
+    justify-self: center;
+    font-size: 2em;
+    text-align: center;
+}
+
+.description {
+    grid-area: 4/1/5/2;
+    align-self: center;
+}
+
+.description p {
+    grid-area: 4/1/5/2;
+    text-align: center;
+    font-size: 1em;
+}
+
+.request {
+    grid-area: 3/1/4/2;
+    align-self: center;
+    justify-self: center;
+    font-size: 1em;
+    color: white;
+}
+
+.request h3 {
+    font-size: 1.5em;
+}
+
+.request label {
+    font-family: 'Gabarito';
+    color: white;
+    text-shadow: 2px 2px 2px #B74F6F;
+}
+
+
+
+#shell {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 95%;
+    border-radius: 2.8%;
+    box-shadow: 5px 5px 15px black;
+    align-self: center;
+    justify-self: center;
 }

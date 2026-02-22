@@ -25,16 +25,19 @@
     <section class="herobox">
         <img id="heroimg" src="images/hiking.JPG" alt="a Haxx0r in his natural habitat">
         <div id="aboutbox">
-            <h2>Kaleb Andelin</h2>
+            <h2>Who am I?</h2>
             <p>Kaleb is a Cybersecurity student at BYU-Idaho. He is in his Sophomore year of college, and so far he's been able to experiment with web design, linux servers, python programming, and scripting. In his free time, he likes to explore the outdoors, ride his bike, and do fun personal projects. </p>
+            <img id="portrait" src="images/portrait.jpg" alt="portrait of Kaleb">
         </div>
         <h2><em>"We are men of action. Lies do not become us"</em> -Wesley, The Princess Bride</h2>
-        <img id="portrait" src="images/portrait.jpg" alt="portrait of Kaleb">
+
     </section>
 
     <div class="carousel">
 
-        <button class="prev">arrow</button>
+        <button class="prev">
+             <img src="images/arrow.svg" alt="arrow">
+        </button>
         <div class="carousel-viewport">
             <div class="carousel-track">
                     <a class="slide" href="ice/prophet_cards/oaks.html"><img src="images/prophet.png" alt=""></a>
@@ -43,13 +46,71 @@
                     <a class="slide" href="ice/valentines/index.html"><img src="images/holiday.png" alt=""></a>
             </div>
         </div>
-        <button class="next">arrow</button>
+        <button class="next">
+            <img src="images/arrow.svg" alt="arrow">
+        </button>
 
     </div>
 
     <section class="projectbox">
-        <video src="images/kettle.MOV"></video>
-        <img src="images/bomshell.png" alt="a terminal window with code">
+        <video autoplay loop muted>
+            <source src="images/kettle.MOV">
+        </video>
+        <div id="kettlebox">
+            <h3>Pimp my Electric Kettle</h3>
+            <p>Preparing yerba mate should be an enjoyable experience, from heating the water to taking that first sip... so I thought, why settle with my boring Walmart kettle when I have a microcontroller and LEDs lying around? So I fired up my IDE, did some coding, and soldered some components together, and now my temperature-controlled LEDs tell me when the water reaches perfect temperature for yerba mate</p>
+            <table>
+                <tr>
+                    <th>Temperature</th>
+                    <th>Color</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td> less than 21°C</td>
+                    <td>dark blue</td>
+                    <td>too cold</td>
+                </tr>
+                <tr>
+                    <td>21-71°C</td>
+                    <td>blue to red gradient</td>
+                    <td>warming up</td>
+                </tr>
+                <tr>
+                    <td>72-75°C</td>
+                    <td>green</td>
+                    <td>ideal temperature/ready</td>
+                </tr>
+                <tr>
+                    <td>above 75°C</td>
+                    <td>flashing red</td>
+                    <td>too hot for mate</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bomtitle">
+            <h2>Meet B.O.M.SHELL</h2>
+            <p>(Book Of Mormon Shell)</p>
+        </div>
+        
+        <div class="request">
+            <h3>Request a demo!</h3>
+            <form>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+            </form>
+        </div>
+        
+        <div class="description">
+
+            <p>BOMSHELL is a python-based scripture reference program that runs in your very own shell! It searches references from the Book of Mormon, Old Testament, and the New Testament at lightning speed, and can be run 100% local. While its functions are limited, good luck finding another scripture reference this light. </p>
+        </div>
+        <video id="shell" autoplay loop muted>
+            <source src="images/bomshellvid.mov">
+        </video>
+        <!-- <img id="shell" src="images/bomshell.png" alt="a terminal window with code"> -->
 
     </section>
 
