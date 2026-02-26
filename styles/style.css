@@ -6,10 +6,14 @@ h1, h2, h3 {
     text-shadow: 2px 2px 2px #B74F6F;
 }
 
-p {
+p, ul {
     font-family: 'Noto Sans Mono';
     color: white;
     text-shadow: 1px 1px #B74F6F;
+}
+
+ul {
+    font-size: 1em;
 }
 
 * {
@@ -31,20 +35,23 @@ background: linear-gradient(90deg, rgba(240, 246, 249, 1) 0%, rgba(153, 193, 214
 
 }
 
+header {
+    background-color: #2B5072;
+    padding: 10px;
+
+}
+
 nav {
     display: grid;
     grid-template-columns: 1fr 2fr 5fr;
     align-items: center;
+    z-index: 1;
 }
 
 #logo {
     width: 100px;
 }
 
-nav {
-    background-color: rgba(144,194,231,0.3);
-    z-index: 1;
-}
 nav h1 {
     grid-column: 2/3;
     font-size: 300%;
@@ -55,7 +62,7 @@ ul {
     grid-column: 3/4;
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -280,4 +287,14 @@ label {
     box-shadow: 5px 5px 15px black;
     align-self: center;
     justify-self: center;
+}
+
+footer {
+    background-color: #2B5072;
+    padding: 10px;
+    margin-top: 1em;
+    padding: 2em;
+    font-family: 'Noto Sans Mono';
+    color: white;
+    text-shadow: 1px 1px #B74F6F;
 }
