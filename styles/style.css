@@ -35,9 +35,18 @@ background: linear-gradient(90deg, rgba(240, 246, 249, 1) 0%, rgba(153, 193, 214
 
 }
 
-header {
+section {
+    background: #368FD3;
+    background: linear-gradient(0deg, rgba(54, 143, 211, 1) 0%, rgba(121, 180, 226, 1) 100%);
+    box-shadow: 2px 2px 10px black;
+    max-width: 1000px;
+}
+
+header, footer {
     background-color: #2B5072;
     padding: 10px;
+    margin: 1em 0 1em 0;
+    box-shadow: 2px 2px 10px black;
 
 }
 
@@ -173,14 +182,9 @@ button {
 /* --------------------------------------------- */
 
 .projectbox {
-    width: 100%;
     display: grid;
     grid-template-columns: 2fr 4fr;
     grid-template-rows: 1fr 6fr 2fr 5fr 1fr;
-    background: #368FD3;
-    background: linear-gradient(0deg, rgba(54, 143, 211, 1) 0%, rgba(121, 180, 226, 1) 100%);
-    /* border: solid white 5px; */
-    box-shadow: 2px 2px 10px black;
 }
 
 .projectbox h2 {
@@ -202,8 +206,6 @@ video {
 
 #kettlebox h3 {
     font-size: 3em;
-    color: white;
-    text-shadow: 2px 2px 2px #B74F6F;
     justify-self: center;
 }
 
@@ -290,11 +292,48 @@ label {
 }
 
 footer {
-    background-color: #2B5072;
-    padding: 10px;
-    margin-top: 1em;
     padding: 2em;
     font-family: 'Noto Sans Mono';
     color: white;
     text-shadow: 1px 1px #B74F6F;
+}
+
+
+/* ------ ICE Specifics ------ */
+
+.icegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icebox {
+    margin: 1em;
+    font-size: 100%;
+}
+
+.icebox img {
+    width: 100%;
+    
+}
+
+/* -------- About Me Specifics --------- */
+
+.aboutme {
+    overflow: auto;
+}
+
+.aboutme img {
+    float: left;
+    max-width: 400px;
+    margin: 1em;
+}
+
+.aboutme h2 {
+    margin: 2%;
+    font-size: 3em;
+    text-align: center;
+}
+
+.aboutme p {
+    margin-right: 1em;
 }
