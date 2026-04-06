@@ -40,6 +40,7 @@ section {
     background: linear-gradient(0deg, rgba(54, 143, 211, 1) 0%, rgba(121, 180, 226, 1) 100%);
     box-shadow: 2px 2px 10px black;
     max-width: 1000px;
+    margin-top: 10px;
 }
 
 header, footer {
@@ -138,7 +139,7 @@ ul {
     position: relative;
     width: 100%;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 10px auto;
     overflow: hidden;
 }
 
