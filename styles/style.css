@@ -338,3 +338,14 @@ footer {
 .aboutme p {
     margin-right: 1em;
 }
+
+.report p, .report h1, .report a {
+    margin: 15px 15px 15px 15px;
+
+}
+
+.report a {
+    font-family: 'Noto Sans Mono';
+    color: white;
+    text-shadow: 1px 1px #B74F6F;
+}
